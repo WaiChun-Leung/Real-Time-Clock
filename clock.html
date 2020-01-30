@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Clock</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="../js/jquery-3.3.1.js"></script>
+	<script src="../js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="../style/stylesheet.css" />
+</head>
+<body>
+	<div class="colums">
+		<div id="displayClock">
+			<p id="clock"></p>
+			<div id="showHideInput" style="display:none;">
+				<input type="text" name="enterHours" id="enterHours" placeholder="Enter hours" />
+				<input type="text" name="enterMinutes" id="enterMinutes" placeholder="Enter minutes" />
+				<input type="text" name="enterSeconds" id="enterSeconds" placeholder="Enter seconds" />
+				<input type="text" name="enterAmPm" id="enterAmPm" placeholder="Enter AM or PM" /><br>
+			</div>
+		</div>
+		
+		<hr>
+		
+		<div id="selection">
+			<div id="seconds" class="selectSection">
+				<div>
+					<input align="center" type="radio" name="hideShow" id="hideSecs" value="HideSeconds">
+					<label for="hideSec">Hide Seconds</label>
+				</div>
+
+				<div>
+					<input align="center" type="radio" name="hideShow" id="showSecs" value="ShowSeconds" checked>
+					<label for="showSec">Show Seconds</label>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div id="hourConvert" class="selectSection">
+				<div>
+					<input align="center" type="radio" id="twenty4" name="hourConvert" value="24Hours">
+					<label for="twenty4Hr">24-Hours</label>
+				</div>
+
+				<div>
+					<input align="center" type="radio" id="twelve" name="hourConvert" value="12Hours" checked>
+					<label for="twelveHr">12-Hours</label>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div id="setTimeButton" class="selectSection">
+				<button type="button" id="setTheTime" name="setTheTime">Set the time</button>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
